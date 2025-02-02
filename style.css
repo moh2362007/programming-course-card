@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Karla';
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(204, 43%, 93%);
+    min-height: 100vh;
+}
+.container .card {
+    max-width: 85%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.199);
+    flex-shrink: 0;
+}
+.container .card .info {
+    padding: 50px 40px;
+
+}
+.container .card .info .title {
+    color: hsl(179, 87%, 37%);
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.container .card .info .time {
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 25px;
+}
+.container .card .info .description {
+    line-height: 1.7;
+    color: #999797;
+    font-weight: 400;
+    text-wrap: balance;
+}
+.container .card .content {
+    display: flex;
+    color: white;    
+}
+.container .card .content .price-info {
+    width: 50%;
+    background-color: hsl(179, 62%, 43%);
+    padding: 35px 40px;
+    border-bottom-left-radius: 8px;
+    text-align: center;
+}
+.container .card .content .price-info .title {
+    margin-bottom: 20px;
+}
+.container .card .content .price-info .price {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: center;
+
+}
+.container .card .content .price-info .price h2 {
+    font-size: 34px;
+}
+.container .card .content .price-info .price span {
+    opacity: 0.5;
+}
+.container .card .content .price-info .description {
+    opacity: 0.9;
+    margin-bottom: 15px;
+}
+.container .card .content .price-info .sign-up {
+    padding: 15px;
+    text-align: center;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 80%;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.container .card .content .why-us {
+    background-color: hsla(179, 62%, 43%, 0.856);
+    padding: 35px 60px;
+    width: 50%;
+    border-bottom-right-radius: 8px;
+}
+.container .card .content .why-us h3 {
+    margin-bottom: 20px;
+}
+.container .card .content .why-us ul {
+    list-style: none;
+}
+.container .card .content .why-us ul li {
+    padding-bottom: 5px;
+    opacity: 0.6;
+}
+
+@media (max-width: 800px) {
+    .container .card{
+        margin: 30px 0;
+        width: 100%;
+    }
+    .container .card .content {
+        flex-direction: column;
+        
+    }
+    .container .card .content .why-us , .container .card .content .price-info {
+        width: 100%;
+        border-radius: 0;
+    }
+}
